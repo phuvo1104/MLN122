@@ -54,7 +54,7 @@ document.querySelector('#app').innerHTML = `
     
     <div class="reveal">
       <div class="image-wrapper image-glow-red">
-        <img src="/images/fifa_empire.png" alt="FIFA Empire Illustration">
+        <img src="./images/fifa_empire.png" alt="FIFA Empire Illustration">
       </div>
     </div>
   </div>
@@ -73,7 +73,7 @@ document.querySelector('#app').innerHTML = `
     <div class="grid-2col" style="margin-bottom: 4rem;">
       <div class="reveal">
         <div class="image-wrapper image-glow-gold">
-          <img src="/images/capital_accumulation.png" alt="Capital Accumulation Concept">
+          <img src="./images/capital_accumulation.png" alt="Capital Accumulation Concept">
         </div>
       </div>
       
@@ -268,7 +268,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         
         <div class="image-wrapper image-glow-gold" style="margin-top: 1.5rem; aspect-ratio: 16 / 8;">
-          <img id="detail-img" src="/images/fifa_revenue.png" alt="FIFA Revenue Concept">
+          <img id="detail-img" src="./images/fifa_revenue.png" alt="FIFA Revenue Concept">
         </div>
       </div>
     </div>
@@ -367,7 +367,7 @@ document.querySelector('#app').innerHTML = `
           </div>
           
           <div class="image-wrapper image-glow-gold">
-            <img src="/images/fifa_revenue.png" alt="FIFA Production Socialization">
+            <img src="./images/fifa_revenue.png" alt="FIFA Production Socialization">
           </div>
         </div>
       </div>
@@ -376,7 +376,7 @@ document.querySelector('#app').innerHTML = `
       <div class="tab-content" id="tab-cons">
         <div class="eval-grid">
           <div class="image-wrapper image-glow-red">
-            <img src="/images/fifa_conflict.png" alt="FIFA Contradiction and Conflict">
+            <img src="./images/fifa_conflict.png" alt="FIFA Contradiction and Conflict">
           </div>
           
           <div class="list-interactive">
@@ -464,25 +464,25 @@ const revenueData = {
     title: "Bản quyền truyền hình",
     percentage: "49%",
     desc: "Bản quyền truyền hình là nguồn thu lớn nhất của FIFA. Các đài truyền hình trên khắp thế giới buộc phải tham gia vào các cuộc đấu thầu cạnh tranh gay gắt, chi trả những khoản tiền khổng lồ để giành quyền phát sóng trực tiếp giải vô địch bóng đá thế giới World Cup. Đây là minh chứng rõ nét cho khả năng áp đặt giá cả độc quyền nhờ nắm giữ mặt hàng độc nhất vô nhị.",
-    img: "/images/fifa_revenue.png"
+    img: "./images/fifa_revenue.png"
   },
   marketing: {
     title: "Tài trợ và Tiếp thị",
     percentage: "29%",
     desc: "Các tập đoàn đa quốc gia hàng đầu (như Coca-Cola, Adidas, Visa...) sẵn sàng chi trả các khoản phí quảng cáo cực kỳ đắt đỏ để trở thành 'đối tác độc quyền' của FIFA. Điều này mang lại cho họ lợi thế cạnh tranh áp đảo so với các đối thủ trên thị trường toàn cầu thông qua việc độc quyền sử dụng thương hiệu World Cup.",
-    img: "/images/fifa_empire.png"
+    img: "./images/fifa_empire.png"
   },
   licensing: {
     title: "Cấp phép thương hiệu (Licensing)",
     percentage: "15%",
     desc: "FIFA thu về nguồn lợi nhuận lớn từ việc bán bản quyền tên gọi, logo giải đấu, và hình ảnh bản quyền cầu thủ cho các công ty sản xuất trò chơi điện tử (ví dụ điển hình là dòng game bóng đá EA Sports nổi tiếng trước đây) và các nhà sản xuất quà tặng lưu niệm, quần áo trên toàn cầu.",
-    img: "/images/capital_accumulation.png"
+    img: "./images/capital_accumulation.png"
   },
   tickets: {
     title: "Vé và Dịch vụ lưu trú",
     percentage: "7%",
     desc: "FIFA giữ quyền kiểm soát hoàn toàn việc định giá, phân phối vé cho mọi trận đấu thuộc hệ thống World Cup. Do không có kênh phân phối trung gian độc lập và không có sản phẩm thay thế tương tự, người hâm mộ bắt buộc phải chấp nhận mọi mức giá vé do FIFA áp đặt để có thể xem trực tiếp.",
-    img: "/images/fifa_conflict.png"
+    img: "./images/fifa_conflict.png"
   }
 };
 
