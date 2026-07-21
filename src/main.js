@@ -449,7 +449,17 @@ document.querySelector('#app').innerHTML = `
 <!-- Footer -->
 <footer>
   <div class="container">
-    <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">
+    <div style="margin-bottom: 2rem; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); text-align: center;">
+      <p style="font-size: 1.1rem; color: var(--accent-gold); margin-top: 0; margin-bottom: 1rem; font-weight: bold;">Thông tin nhóm</p>
+      <p style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 1rem;"><strong>Lớp:</strong> Half2_SE1802</p>
+      <div style="color: var(--text-secondary); font-size: 0.95rem; max-width: 600px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.8rem; text-align: center;">
+        <div style="padding: 0.6rem; background: rgba(0,0,0,0.2); border-radius: 6px; border: 1px solid rgba(255,255,255,0.02);">SE194070 - Tôn Thành Vinh</div>
+        <div style="padding: 0.6rem; background: rgba(0,0,0,0.2); border-radius: 6px; border: 1px solid rgba(255,255,255,0.02);">SE194043 - Võ Trường Phú</div>
+        <div style="padding: 0.6rem; background: rgba(0,0,0,0.2); border-radius: 6px; border: 1px solid rgba(255,255,255,0.02);">SE194009 - Đặng Đào Anh Đức</div>
+        <div style="padding: 0.6rem; background: rgba(0,0,0,0.2); border-radius: 6px; border: 1px solid rgba(255,255,255,0.02);">SE192507 - Phạm Tiến Dũng</div>
+      </div>
+    </div>
+    <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0; text-align: center;">
       © 2026 Bài nghiên cứu Kinh tế chính trị Mác - Lênin. Thiết kế trang web tương tác bởi Antigravity.
     </p>
   </div>
