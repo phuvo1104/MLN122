@@ -1,5 +1,17 @@
 import './style.css'
 
+// Ảnh thật từ Wikimedia Commons — URL ổn định, không trùng lặp
+const IMAGES = {
+  introGlobal: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Home_of_FIFA_-_football_pitch_and_flags.jpg/960px-Home_of_FIFA_-_football_pitch_and_flags.jpg',
+  theoryMonopoly: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/FIFA-Headquarter.jpg/960px-FIFA-Headquarter.jpg',
+  revenueTv: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Opening_of_International_Broadcasting_Center_of_2018_FIFA_World_Cup_01.jpg/960px-Opening_of_International_Broadcasting_Center_of_2018_FIFA_World_Cup_01.jpg',
+  revenueMarketing: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/FIFA_World_Cup_Trophy_Tour_Coca-Cola_aeroplane.jpg/960px-FIFA_World_Cup_Trophy_Tour_Coca-Cola_aeroplane.jpg',
+  revenueLicensing: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/World_Cup_merchandise_on_sale_in_Johannesburg_2010-06-18_1.jpg/960px-World_Cup_merchandise_on_sale_in_Johannesburg_2010-06-18_1.jpg',
+  revenueTickets: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Buying_World_Cup_tickets_in_Johannesburg_2010-06-07_1.jpg/960px-Buying_World_Cup_tickets_in_Johannesburg_2010-06-07_1.jpg',
+  evalPros: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Luzhniki_Stadium%2C_2018_FIFA_World_Cup.jpg/960px-Luzhniki_Stadium%2C_2018_FIFA_World_Cup.jpg',
+  evalCons: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sepp_Blatter_%282009%29.jpg/960px-Sepp_Blatter_%282009%29.jpg',
+}
+
 document.querySelector('#app').innerHTML = `
 <!-- Navigation -->
 <nav class="nav-container">
@@ -54,7 +66,7 @@ document.querySelector('#app').innerHTML = `
     
     <div class="reveal">
       <div class="image-wrapper image-glow-red">
-        <img src="./images/fifa_empire.png" alt="FIFA Empire Illustration">
+        <img src="${IMAGES.introGlobal}" alt="Trụ sở FIFA tại Zurich với sân bóng và cờ các quốc gia thành viên" loading="lazy">
       </div>
     </div>
   </div>
@@ -73,7 +85,7 @@ document.querySelector('#app').innerHTML = `
     <div class="grid-2col" style="margin-bottom: 4rem;">
       <div class="reveal">
         <div class="image-wrapper image-glow-gold">
-          <img src="./images/capital_accumulation.png" alt="Capital Accumulation Concept">
+          <img src="${IMAGES.theoryMonopoly}" alt="Tòa nhà trụ sở FIFA tại Zurich — biểu tượng quyền lực độc quyền tập trung" loading="lazy">
         </div>
       </div>
       
@@ -268,7 +280,7 @@ document.querySelector('#app').innerHTML = `
         </div>
         
         <div class="image-wrapper image-glow-gold" style="margin-top: 1.5rem; aspect-ratio: 16 / 8;">
-          <img id="detail-img" src="./images/fifa_revenue.png" alt="FIFA Revenue Concept">
+          <img id="detail-img" src="${IMAGES.revenueTv}" alt="Trung tâm phát sóng quốc tế World Cup 2018 tại Moscow" loading="lazy">
         </div>
       </div>
     </div>
@@ -367,7 +379,7 @@ document.querySelector('#app').innerHTML = `
           </div>
           
           <div class="image-wrapper image-glow-gold">
-            <img src="./images/fifa_revenue.png" alt="FIFA Production Socialization">
+            <img src="${IMAGES.evalPros}" alt="Sân vận động Luzhniki trong World Cup 2018 — hạ tầng siêu giải đấu do FIFA tổ chức" loading="lazy">
           </div>
         </div>
       </div>
@@ -376,7 +388,7 @@ document.querySelector('#app').innerHTML = `
       <div class="tab-content" id="tab-cons">
         <div class="eval-grid">
           <div class="image-wrapper image-glow-red">
-            <img src="./images/fifa_conflict.png" alt="FIFA Contradiction and Conflict">
+            <img src="${IMAGES.evalCons}" alt="Chủ tịch FIFA Sepp Blatter — giai đoạn bê bối tham nhũng FIFA Gate" loading="lazy">
           </div>
           
           <div class="list-interactive">
@@ -474,25 +486,25 @@ const revenueData = {
     title: "Bản quyền truyền hình",
     percentage: "49%",
     desc: "Bản quyền truyền hình là nguồn thu lớn nhất của FIFA. Các đài truyền hình trên khắp thế giới buộc phải tham gia vào các cuộc đấu thầu cạnh tranh gay gắt, chi trả những khoản tiền khổng lồ để giành quyền phát sóng trực tiếp giải vô địch bóng đá thế giới World Cup. Đây là minh chứng rõ nét cho khả năng áp đặt giá cả độc quyền nhờ nắm giữ mặt hàng độc nhất vô nhị.",
-    img: "./images/fifa_revenue.png"
+    img: IMAGES.revenueTv
   },
   marketing: {
     title: "Tài trợ và Tiếp thị",
     percentage: "29%",
     desc: "Các tập đoàn đa quốc gia hàng đầu (như Coca-Cola, Adidas, Visa...) sẵn sàng chi trả các khoản phí quảng cáo cực kỳ đắt đỏ để trở thành 'đối tác độc quyền' của FIFA. Điều này mang lại cho họ lợi thế cạnh tranh áp đảo so với các đối thủ trên thị trường toàn cầu thông qua việc độc quyền sử dụng thương hiệu World Cup.",
-    img: "./images/fifa_empire.png"
+    img: IMAGES.revenueMarketing
   },
   licensing: {
     title: "Cấp phép thương hiệu (Licensing)",
     percentage: "15%",
     desc: "FIFA thu về nguồn lợi nhuận lớn từ việc bán bản quyền tên gọi, logo giải đấu, và hình ảnh bản quyền cầu thủ cho các công ty sản xuất trò chơi điện tử (ví dụ điển hình là dòng game bóng đá EA Sports nổi tiếng trước đây) và các nhà sản xuất quà tặng lưu niệm, quần áo trên toàn cầu.",
-    img: "./images/capital_accumulation.png"
+    img: IMAGES.revenueLicensing
   },
   tickets: {
     title: "Vé và Dịch vụ lưu trú",
     percentage: "7%",
     desc: "FIFA giữ quyền kiểm soát hoàn toàn việc định giá, phân phối vé cho mọi trận đấu thuộc hệ thống World Cup. Do không có kênh phân phối trung gian độc lập và không có sản phẩm thay thế tương tự, người hâm mộ bắt buộc phải chấp nhận mọi mức giá vé do FIFA áp đặt để có thể xem trực tiếp.",
-    img: "./images/fifa_conflict.png"
+    img: IMAGES.revenueTickets
   }
 };
 
